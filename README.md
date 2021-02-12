@@ -9,7 +9,7 @@ A good commit message is a way to communicate with your colleagues and future yo
 Please follow [this article](https://wiki.bloopark.com/display/BPIT/How+to+Write+a+Git+Commit+Message) for more details.
 
 ## Rebasing your own work
- Rebase can be used to add/change/remove your commits directly from your own branch too! The “base” on which you rebase can be virtually any commit — even a direct ancestor.
+Rebase can be used to add/change/remove your commits directly from your own branch too! The “base” on which you rebase can be virtually any commit — even a direct ancestor.
 
 In fact, if you wanted to see what was happening during the rebase we did, you could have used the “interactive mode” of rebase by adding the `-i` or `–interactive` argument. By doing so, Git will open your editor of choice (the one defined in your `EDITOR` environment variable) and list all of the commits that will be affected by the rebase operation, and what should be done with every single one of them. This is where the true power of `rebase` lies.
 
@@ -19,6 +19,17 @@ To sum up, `rebase` is just a Git command that lets you:
 - Select one or multiple sequential commits
 - Base them on any commit of your repository
 - Apply changes to this commit sequence as they are added on top of the new base commit
+
+To better illustrate this, consider the following series of commits:
+
+```bash
+$ git --no-pager log --oneline
+57f15b4 (HEAD -> master) add D and E files
+61681da add B file
+7d4a28d add C file
+f92bb1d add A
+78b3f67 root commit
+```
 
 ## Rebasing on the base branch
 In September 2016, GitHub introduced [a new way to merge pull requests:](https://github.blog/2016-09-26-rebase-and-merge-pull-requests/) the “Rebase and merge” button. Also available for other repository managers such as GitLab, it’s the “rebase front door”. It lets you perform a single rebase operation of your Pull Request commits on top of your base branch and then perform a merge. It is very important to observe that those two operations are performed in order, and that the rebase is not a substitution of the merge. Hence rebase is not used to replace the merge, but it completes it.
