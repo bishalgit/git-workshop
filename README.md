@@ -57,5 +57,7 @@ The first step retrieves the latest changes from the distant copy of `master` in
 
 ![Remote Rebase](https://blog-api.algolia.com/wp-content/uploads/2017/12/image1.png)
 
+As you can see, the feature branch now includes all the latest changes, so you’re able to work in sync with the rest of your team. By working with the above workflow, you’ll be able to deal with potential conflicts earlier and progressively instead of at the very last moment (when you want to merge your work within the base branch). People often disregard the “Rebase and merge” button because they expect too many conflicts at the very last step of the process (so they prefer to perform a regular merge commit instead). Ultimately, it takes a small active effort to stay in sync with the latest changes.
+
 ## Reference
 - https://www.algolia.com/blog/engineering/master-git-rebase/
