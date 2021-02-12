@@ -20,6 +20,9 @@ To sum up, `rebase` is just a Git command that lets you:
 - Base them on any commit of your repository
 - Apply changes to this commit sequence as they are added on top of the new base commit
 
+## Rebasing on the base branch
+In September 2016, GitHub introduced [a new way to merge pull requests:](https://github.blog/2016-09-26-rebase-and-merge-pull-requests/) the “Rebase and merge” button. Also available for other repository managers such as GitLab, it’s the “rebase front door”. It lets you perform a single rebase operation of your Pull Request commits on top of your base branch and then perform a merge. It is very important to observe that those two operations are performed in order, and that the rebase is not a substitution of the merge. Hence rebase is not used to replace the merge, but it completes it.
+
 You can simulate what happens when you click on the “Rebase and merge” (when there’s no conflict) by performing the following commands:
 
 ```bash
