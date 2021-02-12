@@ -41,5 +41,9 @@ By doing so, you finally end up with a “linear history”:
 
 As you see, rebasing is not a substitution for the merging step. As explained before, the two operations are not performed on the same branch: `rebase` is used on the feature branch whereas `merge` is performed of the base branch. For now, this operation just prevents having a single merge commit with all the changes in it, and it’s still a single operation that happens at the last step of your contribution (i.e., when you want to share your work).
 
+Until now, we have only interacted with `master` as our base branch. To stay in sync with the changes of the base branch, it’s just a matter of performing the rebase step with the up-to-date base branch. The longer you wait to do this, the more out of sync you’ll be.
+
+The up-to-date version of your base branch is hidden in plain sight. It’s a read-only version of the base branch, prefixed with the name of the remote to which you’re connected, or more simply put: it’s a read-only copy of the branch from your remote instance (such as GitHub or GitLab). The default prefix when you are cloning the repository for the first time is `origin`. More concretely, your `master` branch is the local version of master, whereas `origin/master` is the remote version of this branch, copied on your computer the last time you performed a `git fetch` operation.
+
 ## Reference
 - https://www.algolia.com/blog/engineering/master-git-rebase/
