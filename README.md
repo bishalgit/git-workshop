@@ -72,5 +72,7 @@ git rebase origin/master
 
 The first step retrieves the latest changes from the distant copy of `master` into your local `origin/master` branch. The second one checks out your feature branch. The last one  performs the `rebase` so that all your commits are now added on top of the latest changes that happened parallel to your own work. By applying those commands on our very first example, here is what would have happened:
 
+![Remote Rebase](https://blog-api.algolia.com/wp-content/uploads/2017/12/image1.png)
+
 ## Reference
 - https://www.algolia.com/blog/engineering/master-git-rebase/
