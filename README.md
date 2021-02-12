@@ -29,5 +29,9 @@ git checkout main
 git merge new-feature --ff
 ```
 
+By doing so, you finally end up with a “linear history”:
+
+![Linear Hisotry](https://blog-api.algolia.com/wp-content/uploads/2017/12/image4-720x136.png)
+
 ## Reference
 - https://www.algolia.com/blog/engineering/master-git-rebase/
