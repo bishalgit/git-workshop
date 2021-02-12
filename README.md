@@ -20,5 +20,14 @@ To sum up, `rebase` is just a Git command that lets you:
 - Base them on any commit of your repository
 - Apply changes to this commit sequence as they are added on top of the new base commit
 
+You can simulate what happens when you click on the “Rebase and merge” (when there’s no conflict) by performing the following commands:
+
+```bash
+git checkout new-feature
+git rebase main
+git checkout main
+git merge new-feature --ff
+```
+
 ## Reference
 - https://www.algolia.com/blog/engineering/master-git-rebase/
