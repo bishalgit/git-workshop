@@ -39,5 +39,7 @@ By doing so, you finally end up with a “linear history”:
 
 ![Linear Hisotry](https://blog-api.algolia.com/wp-content/uploads/2017/12/image4-720x136.png)
 
+As you see, rebasing is not a substitution for the merging step. As explained before, the two operations are not performed on the same branch: `rebase` is used on the feature branch whereas `merge` is performed of the base branch. For now, this operation just prevents having a single merge commit with all the changes in it, and it’s still a single operation that happens at the last step of your contribution (i.e., when you want to share your work).
+
 ## Reference
 - https://www.algolia.com/blog/engineering/master-git-rebase/
