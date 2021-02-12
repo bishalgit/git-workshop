@@ -45,5 +45,13 @@ Until now, we have only interacted with `master` as our base branch. To stay in 
 
 The up-to-date version of your base branch is hidden in plain sight. It’s a read-only version of the base branch, prefixed with the name of the remote to which you’re connected, or more simply put: it’s a read-only copy of the branch from your remote instance (such as GitHub or GitLab). The default prefix when you are cloning the repository for the first time is `origin`. More concretely, your `master` branch is the local version of master, whereas `origin/master` is the remote version of this branch, copied on your computer the last time you performed a `git fetch` operation.
 
+We’ve stepped through a lot of theoretical material, but as it turns out, the end result is relatively straightforward; here’s how to sync with changes happening on the remote:
+
+```bash
+git fetch
+git checkout my-new-feat
+git rebase origin/master
+```
+
 ## Reference
 - https://www.algolia.com/blog/engineering/master-git-rebase/
