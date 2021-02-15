@@ -8,6 +8,10 @@ In this workshop we will focus on three sections:
 A good commit message is a way to communicate with your colleagues and future yourself.<br/>
 Please follow [this article](https://wiki.bloopark.com/display/BPIT/How+to+Write+a+Git+Commit+Message) for more details.
 
+skdjflsj
+lskdjf
+
+
 ## Rebasing your own work
 Rebase can be used to add/change/remove your commits directly from your own branch too! The “base” on which you rebase can be virtually any commit — even a direct ancestor.
 
