@@ -123,6 +123,7 @@ As you can see, the feature branch now includes all the latest changes, so youâ€
 
 ## Pros of Rebase
 - Linear commit history
+- You can rebase your own work
 
 ## Cons of Rebase
 ## Pros of Rebasing your own work
