@@ -14,6 +14,7 @@ lskdjf
 
 ## Rebasing your own work
 Rebase can be used to add/change/remove your commits directly from your own branch too! The “base” on which you rebase can be virtually any commit — even a direct ancestor.
+- New point
 
 In fact, if you wanted to see what was happening during the rebase we did, you could have used the “interactive mode” of rebase by adding the `-i` or `–interactive` argument. By doing so, Git will open your editor of choice (the one defined in your `EDITOR` environment variable) and list all of the commits that will be affected by the rebase operation, and what should be done with every single one of them. This is where the true power of `rebase` lies.
 
@@ -106,6 +107,10 @@ As you see, rebasing is not a substitution for the merging step. As explained be
 Until now, we have only interacted with `master` as our base branch. To stay in sync with the changes of the base branch, it’s just a matter of performing the rebase step with the up-to-date base branch. The longer you wait to do this, the more out of sync you’ll be.
 
 The up-to-date version of your base branch is hidden in plain sight. It’s a read-only version of the base branch, prefixed with the name of the remote to which you’re connected, or more simply put: it’s a read-only copy of the branch from your remote instance (such as GitHub or GitLab). The default prefix when you are cloning the repository for the first time is `origin`. More concretely, your `master` branch is the local version of master, whereas `origin/master` is the remote version of this branch, copied on your computer the last time you performed a `git fetch` operation.
+
+lskdjflksj
+lskdjlf
+lkjldf
 
 We’ve stepped through a lot of theoretical material, but as it turns out, the end result is relatively straightforward; here’s how to sync with changes happening on the remote:
 
