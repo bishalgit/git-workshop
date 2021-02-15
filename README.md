@@ -122,3 +122,5 @@ As you can see, the feature branch now includes all the latest changes, so youâ€
 - https://www.algolia.com/blog/engineering/master-git-rebase/
 
 ## Pros of Rebase
+
+## Cons of Rebase
