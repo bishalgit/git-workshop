@@ -124,3 +124,8 @@ As you can see, the feature branch now includes all the latest changes, so youâ€
 ## Pros of Rebase
 
 ## Cons of Rebase
+## Pros of Rebasing your own work
+- Point 1
+
+# Cons of Rebasing your own work
+- Point 1
