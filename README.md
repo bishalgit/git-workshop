@@ -41,6 +41,47 @@ Anyway, let’s rebase!
 
 Let’s start with a `git rebase -i HEAD~4`. This tells Git to interactively rebase the last 4 commits from HEAD inclusive. `HEAD~4` points to the “root commit” which is the commit upon which we will rebase. After hitting ENTER, your editor of choice will open (or `vi` by default on Unix-style systems). Here, Git is simply asking you what you want to do with the commit you performed.
 
+```bash
+pick f92bb1d add A
+pick 7d4a28d add C file
+pick 61681da add B file
+pick 57f15b4 add D and E files
+
+# Rebase 78b3f67..57f15b4 onto 78b3f67 (4 commands)
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+```
+
+As explained earlier, every line represents a single commit, prefixed by the corresponding rebase command that will get applied. All the commented lines are ignored during the rebase and are here to remind you of what to do now. In our case, we will go with the following commands:
+
+```bash
+reword f92bb1d add A
+pick 61681da add B file
+pick 7d4a28d add C file
+edit 57f15b4 add D and E files
+```
+
+Here, we told Git to perform three tasks for us during the rebase:
+
+- Stop at the first commit to let us change the commit message
+- Reorder the second and third commit to have them in the correct order
+- Stop at the last commit to let us do some manual amending
+
 ## Rebasing on the base branch
 In September 2016, GitHub introduced [a new way to merge pull requests:](https://github.blog/2016-09-26-rebase-and-merge-pull-requests/) the “Rebase and merge” button. Also available for other repository managers such as GitLab, it’s the “rebase front door”. It lets you perform a single rebase operation of your Pull Request commits on top of your base branch and then perform a merge. It is very important to observe that those two operations are performed in order, and that the rebase is not a substitution of the merge. Hence rebase is not used to replace the merge, but it completes it.
 
