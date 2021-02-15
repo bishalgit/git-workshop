@@ -124,8 +124,12 @@ As you can see, the feature branch now includes all the latest changes, so youâ€
 ## Pros of Rebase
 - Linear commit history
 - You can rebase your own work
+- Get upto date with master branch
 
 ## Cons of Rebase
+- With great power comes great responsibility
+- If done not correctly is danger
+
 ## Pros of Rebasing your own work
 - Point 1
 
