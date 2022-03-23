@@ -12,6 +12,9 @@ Please follow [this article](https://wiki.bloopark.com/display/BPIT/How+to+Write
 ## Best practices about unit tests in Odoo sh
 Even when you can use tags to run only your tests, its good practice if you run also Odoo tests.
 
+## Odoo sh best practices
+Always check your settings after first time push of the branch
+
 ## Reference
 - https://www.algolia.com/blog/engineering/master-git-rebase/
 
