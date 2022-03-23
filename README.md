@@ -9,6 +9,9 @@ In this workshop we will focus on following sections:
 A good commit message is a way to communicate with your colleagues and future yourself.<br/>
 Please follow [this article](https://wiki.bloopark.com/display/BPIT/How+to+Write+a+Git+Commit+Message) for more details.
 
+## Best practices about unit tests in Odoo sh
+Even when you can use tags to run only your tests, its good practice if you run also Odoo tests.
+
 ## Reference
 - https://www.algolia.com/blog/engineering/master-git-rebase/
 
