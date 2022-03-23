@@ -67,3 +67,4 @@ You will have less conflicts if you have the habit of remote rebasing. However, 
 ## References
 - https://www.aleksandrhovhannisyan.com/blog/atomic-git-commits/
 - https://www.unit-tests-best-practices.com
+- https://github.com/bishalgit/git-workshop
