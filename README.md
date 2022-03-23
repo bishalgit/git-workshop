@@ -9,6 +9,9 @@ In this workshop we will focus on following sections:
 A good commit message is a way to communicate with your colleagues and future yourself.<br/>
 Please follow [this article](https://wiki.bloopark.com/display/BPIT/How+to+Write+a+Git+Commit+Message) for more details.
 
+
+## Front end Best Practice
+Add meaningful comments to describe your code
 ## Reference
 - https://www.algolia.com/blog/engineering/master-git-rebase/
 
