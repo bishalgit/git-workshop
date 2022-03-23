@@ -18,6 +18,9 @@ Always check your settings after first time push of the branch
 ## Reference
 - https://www.algolia.com/blog/engineering/master-git-rebase/
 
+## Best practices about CSS
+Here are some best practices of css
+
 ## Pros of Rebase
 - Linear commit history
 - You can rebase your own work
